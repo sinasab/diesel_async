@@ -38,6 +38,7 @@ use tokio_postgres::Statement;
 
 pub use self::transaction_builder::TransactionBuilder;
 
+#[cfg(feature = "postgres")]
 pub mod copy;
 mod error_helper;
 mod row;
